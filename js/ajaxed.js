@@ -93,10 +93,12 @@ function ffeedback(){
 
 window.onload=func;
 
+if(vhome){
 if(vhome.addEventListener)
 	vhome.addEventListener("click", fhome, false);
 else if(vhome.attachEvent)
 	vhome.attachEvent('onclick', fhome);
+}
 
 if(vabout.addEventListener)
 	vabout.addEventListener("click", fabout, false);
