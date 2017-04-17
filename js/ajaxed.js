@@ -16,7 +16,6 @@ function funct(){
 }
 
 function func(){
-	x.abort();
 	x.open("GET", "pages/home.html");
 	x.onreadystatechange =funct;
 	x.send();
@@ -104,10 +103,10 @@ if(vabout.addEventListener)
 else if(vabout.attachEvent)
 	vabout.attachEvent('onclick', fabout);
 
-if(vchild.addEventListener)
-	vchild.addEventListener("click", fchildhood, false);
-else if(vchild.attachEvent)
-	vchild.attachEvent('onclick', fchildhood);
+if(vchildhood.addEventListener)
+	vchildhood.addEventListener("click", fchildhood, false);
+else if(vchildhood.attachEvent)
+	vchildhood.attachEvent('onclick', fchildhood);
 
 if(vcollege.addEventListener)
 	vcollege.addEventListener("click", fcollege, false);
