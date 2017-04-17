@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Tangerine" rel="stylesheet">
+	<title>Kaushal Kumar</title>
+<!-- 	<script type="text/javascript">
+		window.onbeforeunload = function() {
+			return "Thanks for visiting here. Do you really wish to go?"
+		}
+	</script> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="js/typed.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.theclass > li a').click(function(){
+				$(this).parent().find('li').toggle();
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+		tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+		function GetClock(){
+			var d=new Date();
+			var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
+			if(nyear<1000) nyear+=1900;
+			var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds();
+			if(nmin<=9) nmin="0"+nmin
+				if(nsec<=9) nsec="0"+nsec;
+			document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+"";
+		}
+		$(document).ready(function(){
+			GetClock();
+			setInterval(GetClock,1000);
+		})
+	</script>
+	<style>
+		html { 
+			background: url(horse.jpg) no-repeat center center fixed; 
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+			color: #ffffff;
+		}
+		hr{
+			border: 0;
+			height: 1px;
+			background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.6), rgba(0, 0, 0, 0));
+		}
+		#mainbody{
+			width: 100%; 
+			height: 100%; 
+			display: flex; 
+			flex-direction: column; 
+			flex-wrap: nowrap; 
+			text-align: justify;
+			margin: 0px;
+			padding: 0px;
+		}
+		a{
+			cursor: pointer;
+		}
+		ol, ul{
+			list-style: none;
+		}
+		li{
+			margin: 16px 0;
+		}
+		#hsection{
+			text-align: justify;
+			width: 100%; 
+			height: 10%; 
+			flex-shrink: 0; 
+			position: fixed;
+			top: 0%;
+			font-family: 'Fredericka the Great';
+			/*background-color: #0066ff;
+			color: #ffffff;*/
+		}
+		#headed
+		{
+			font-size: 4em;
+		}
+		#subheaded
+		{
+			font-size: 2em;			
+		}
+		#bsection{
+			font-family: 'Tangerine', cursive;
+			flex-shrink: 1; 
+			overflow: hidden;
+			display: flex;
+			width: 100%; 
+			height: 75%; 
+			position: fixed;
+			top: 10%; 
+			flex: 0 0 0%; 
+			overflow: auto;
+		}
+		#navdiv{
+			font-size: 2em;
+			display: inline;
+			width: 12.5%; 
+			overflow: auto;
+		}
+		#contentdiv{
+			/*display: flex;*/
+			width: 75%; 
+			overflow: auto;
+		}
+		#advdiv{
+			font-size: 2em;
+			display: flex;
+			width: 12.5%; 
+			overflow: auto;
+		}
+		#fsection{
+			font-family: 'Tangerine';
+			font-size: 0.8em;
+			flex-shrink: 0;
+			width: 100%; 
+			height: 15%;
+			position: fixed;
+			top: 90%;
+		}
+		#control{
+			list-style: none;
+		}
+		
+	</style>
+</head>
+<body id="mainbody">
+	<section><header><div id="hsection"> 
+		<div id="headed" style="font-size: 4em;">
+			Kaushal Kumar
+		</div>
+		<div id="subheaded">
+			<span class="typedin"></span>
+			<hr id="hline"/>
+		</div>		
+	</div></header></section>
+	<section><article><div id="bsection">
+		<div id="navdiv">
+			<ul>
+				<li><a id="ihome" style="cursor: pointer;">Home</a></li>
+				<li><a id="iabout" style="cursor: pointer;">About Me</a></li>
+				<li><a id="iearly" style="cursor: pointer;">Early Life</a></li>
+				<li><a id="ismcdu" style="cursor: pointer;">The College</a></li>
+				<li><a id="ichapter" style="cursor: pointer;">NSS Chapter</a></li>
+				<li><a id="ilove" style="cursor: pointer;">The Life</a></li>
+				<li><a id="istep" style="cursor: pointer;">The First Step</a></li>
+				<li><a id="iparent" style="cursor: pointer;">My Parents</a></li>
+				<li><a id="icontact" style="cursor: pointer;">Contact me</a></li>
+				<li><a id="ifeedback" style="cursor: pointer;">Website Feedback</a></li>
+			</ul>
+		</div>
+		<div id="contentdiv">
+
+		</div>
+		<div  id="advdiv">
+			<ol class="theclass">
+				<li id="appl" style="margin: 10px 0;"><a>Relevant Links</a>
+					<ol id="control" style="margin: 10px 0;">
+						<li id="applitem1">
+							<a >The SMVDU</a>
+						</li>
+						<li id="applitem1">
+							<a >The Vikalp</a>
+						</li>
+						<li id="applitem1">
+							<a >Resume</a>
+						</li>
+						<li id="applitem1">
+							<a >Surrealism</a>
+						</li>
+					</ol>
+				</ol>
+			</div>
+
+		</div></article></section>
+		<section><footer><div id="fsection">
+			<footer>
+				<div>
+					<hr id="fline"/>
+					<p> &#169 Kaushal Kumar&#174 </p>
+
+				</div>
+				<div id="clockbox"></div>
+
+			</div></footer></section>
+
+		</body>
+		</html>
