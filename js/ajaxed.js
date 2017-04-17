@@ -94,53 +94,71 @@ function ffeedback(){
 window.onload=func;
 
 if(vhome){
-if(vhome.addEventListener)
-	vhome.addEventListener("click", fhome, false);
-else if(vhome.attachEvent)
-	vhome.attachEvent('onclick', fhome);
+	if(vhome.addEventListener)
+		vhome.addEventListener("click", fhome, false);
+	else if(vhome.attachEvent)
+		vhome.attachEvent('onclick', fhome);
 }
 
-if(vabout.addEventListener)
-	vabout.addEventListener("click", fabout, false);
-else if(vabout.attachEvent)
-	vabout.attachEvent('onclick', fabout);
+if(vabout){
+	if(vabout.addEventListener)
+		vabout.addEventListener("click", fabout, false);
+	else if(vabout.attachEvent)
+		vabout.attachEvent('onclick', fabout);
+}
 
-if(vchildhood.addEventListener)
-	vchildhood.addEventListener("click", fchildhood, false);
-else if(vchildhood.attachEvent)
-	vchildhood.attachEvent('onclick', fchildhood);
+if(vchildhood){
+	if(vchildhood.addEventListener)
+		vchildhood.addEventListener("click", fchildhood, false);
+	else if(vchildhood.attachEvent)
+		vchildhood.attachEvent('onclick', fchildhood);
+}
 
-if(vcollege.addEventListener)
-	vcollege.addEventListener("click", fcollege, false);
-else if(vcollege.attachEvent)
-	vcollege.attachEvent('onclick', fcollege);
+if(vcollege){
+	if(vcollege.addEventListener)
+		vcollege.addEventListener("click", fcollege, false);
+	else if(vcollege.attachEvent)
+		vcollege.attachEvent('onclick', fcollege);
+}
 
-if(vnss.addEventListener)
-	vnss.addEventListener("click", fnss, false);
-else if(vnss.attachEvent)
-	vnss.attachEvent('onclick', fnss);
+if(vnss){
+	if(vnss.addEventListener)
+		vnss.addEventListener("click", fnss, false);
+	else if(vnss.attachEvent)
+		vnss.attachEvent('onclick', fnss);
+}
 
-if(vlove.addEventListener)
-	vlove.addEventListener("click", flove, false);
-else if(vlove.attachEvent)
-	vlove.attachEvent('onclick', flove);
+if(vlove){
+	if(vlove.addEventListener)
+		vlove.addEventListener("click", flove, false);
+	else if(vlove.attachEvent)
+		vlove.attachEvent('onclick', flove);
+}
 
-if(vstep.addEventListener)
-	vstep.addEventListener("click", fstep, false);
-else if(vstep.attachEvent)
-	vstep.attachEvent('onclick', fstep);
+if(vstep){
+	if(vstep.addEventListener)
+		vstep.addEventListener("click", fstep, false);
+	else if(vstep.attachEvent)
+		vstep.attachEvent('onclick', fstep);
+}
 
-if(vdad.addEventListener)
-	vdad.addEventListener("click", fdad, false);
-else if(vdad.attachEvent)
-	vdad.attachEvent('onclick', fdad);
+if(vdad){
+	if(vdad.addEventListener)
+		vdad.addEventListener("click", fdad, false);
+	else if(vdad.attachEvent)
+		vdad.attachEvent('onclick', fdad);
+}
 
-if(vcontact.addEventListener)
-	vcontact.addEventListener("click", fcontact, false);
-else if(vcontact.attachEvent)
-	vcontact.attachEvent('onclick', fcontact);
+if(vcontact){
+	if(vcontact.addEventListener)
+		vcontact.addEventListener("click", fcontact, false);
+	else if(vcontact.attachEvent)
+		vcontact.attachEvent('onclick', fcontact);
+}
 
-if(vfeedback.addEventListener)
-	vfeedback.addEventListener("click", ffeedback, false);
-else if(vfeedback.attachEvent)
-	vfeedback.attachEvent('onclick', ffeedback);
+if(vfeedback){
+	if(vfeedback.addEventListener)
+		vfeedback.addEventListener("click", ffeedback, false);
+	else if(vfeedback.attachEvent)
+		vfeedback.attachEvent('onclick', ffeedback);
+}
