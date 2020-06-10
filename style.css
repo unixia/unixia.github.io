@@ -95,6 +95,7 @@ li {
 
 #contentdiv {
     /*display: flex;*/
+    font-size: 2em;
     width: 75%;
     overflow: auto;
 }
