@@ -18,6 +18,12 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/typed.js"></script>
 	<script src="js/ajaxed.js"></script>
+	<script>
+		function myFunction() {
+		   var element = document.body;
+		   element.classList.toggle("dark-mode");
+		}
+	</script>
 	<script type="text/javascript">
 		$(function(){
 			$('.theclass > li a').click(function(){
@@ -45,13 +51,23 @@
 </head>
 <body id="mainbody">
 	<section><header><div id="hsection"> 
-		<div id="headed" style="font-size: 4em;">
-			Kaushal Kumar
+		<div id="headed">
+			<div id="pagetitle" style="width:80%; float: left;">
+				Kaushal Kumar
+			</div>
+			<div id="togglebutton">
+				<button onclick="myFunction()" style="font-family: Product Sans; font-size: 0.22em; float: right;">Toggle dark mode</button>
+			</div>
+			<div id="subheaded">
+				<span class="typedin"></span>
+				<hr id="hline"/>
+			</div>
 		</div>
-		<div id="subheaded">
+
+<!-- 		<div id="subheaded">
 			<span class="typedin"></span>
 			<hr id="hline"/>
-		</div>		
+		</div>	 -->	
 	</div></header></section>
 	<section><article><div id="bsection">
 		<div id="navdiv">
